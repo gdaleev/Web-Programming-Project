@@ -1,0 +1,335 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  width: 100vw;
+}
+
+@font-face{
+  font-family: Title;
+  src: url("title.ttf")
+}
+
+@font-face{
+  font-family: Quote;
+  src: url("quote.ttf")
+}
+
+@font-face {
+  font-family: Nav;
+  src: url(Nav.ttf);
+}
+
+@font-face {
+  font-family: About;
+  src: url(About.ttf);
+}
+
+@font-face {
+  font-family: Cards;
+  src: url(Cards.ttf);
+}
+
+@font-face {
+  font-family: BloggerSans-Italic;
+  src: url(BloggerSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: BloggerSans-Light;
+  src: url(BloggerSans-Light.ttf);
+}
+
+header {
+  padding-top: 5px;
+  padding-bottom: 500px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: black;
+  font-family: Title;
+  background-image: url("car-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+header h2{
+  font-family: Quote;
+}
+
+nav {
+  background: black;
+  position: sticky;
+  top: 0;
+  font-family: Nav;
+  width: 100vw;
+}
+
+i {
+ color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 0 10px;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+  background-color: white;
+}
+
+i:hover{
+  color: black;
+}
+
+.nav-icon:hover{
+   color: black;
+}
+
+.content-container{
+  width: 100vw;
+}
+
+.about-title {
+  text-align: center;
+  padding: 20px;
+  font-family: Nav;
+}
+
+.about {
+  padding: 20px 50px 100px 50px;
+  font-size: 25px;
+  text-align: center;
+  font-family: About;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+.our-cars{
+	text-align: center;
+	padding: 20px;
+  font-family: Nav;
+}
+
+.grid{
+	display: grid;
+  grid-template-columns: 500px 500px 500px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Cards;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: Cards;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  overflow: auto;
+  font-family: About;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+  .form-container input[type=text], 
+  .form-container input[type=password], 
+  .form-container input[type=email], 
+  .form-container input[type=date],
+  .form-container input[type=time]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+  .form-container input[type=text]:focus,
+  .form-container input[type=password]:focus, 
+  .form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-family: About;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container h2{
+  font-size: 1em;
+}
+
+#error{
+  color: red;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  color: white;
+  background-image: url("gradient-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+.social-icon {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.social-icon:active {
+  color: white;
+}
+
+
+.titles {
+  text-align: center;
+  font-size: 20px;
+}
+
+.our-cars-title {
+  text-align: left;
+  margin-left: 40px;
+  font-family: BloggerSans-Bold;
+}
+
+.foot_info{
+  font-family: Cards;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px){
+  .grid{
+    display: grid;
+    grid-template-columns: 500px;
+  }
+
+  header {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(phone-size-background.jpg);
+    color: black;
+  }
+
+  header h2{
+    position: relative;
+    bottom: 10px;
+  }
+
+  nav ul{
+    text-align: center;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+
+  .about{
+    text-align: justify;
+    font-size: 20px;
+  }
+  
+  .about-title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 992px){
+
+  .form-container{
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+
+   .grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+  }
+
+}
